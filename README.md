@@ -17,3 +17,9 @@ git push origin main
 # create a new app with vite
 
 npm create vite@latest wedding-ui -- --template react
+
+cd wedding-ui
+
+npm install
+
+npm run dev

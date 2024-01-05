@@ -19,10 +19,24 @@ body {
   padding: 0;
 }
 
-.one {
+img {
+  height: 100px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  margin-top: 7em;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  line-height: 0.5;
+}
+
+.one h1 {
+  font-size: 6em;
+}
+
+.one > .one-1,
+.two > .two-1 {
+  margin-top: 5em;
 }

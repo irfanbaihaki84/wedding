@@ -23,17 +23,27 @@ img {
   height: 100px;
 }
 
-.one,
-.two,
-.three,
-.four {
+.home,
+.countdown,
+.bridegroom,
+.gallery,
+.gift {
   margin-top: 7em;
   text-align: center;
   line-height: 0.5;
 }
 
-.one h1 {
+.title-1,
+.title-2 {
+  color: rgb(126, 107, 2);
+}
+
+.title-1 {
   font-size: 6em;
+}
+
+.title-2 {
+  font-size: 2em;
 }
 
 .one > .one-1,

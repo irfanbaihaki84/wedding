@@ -30,7 +30,8 @@ img {
 .gift {
   margin-top: 7em;
   text-align: center;
-  line-height: 0.5;
+  line-height: 1;
+  letter-spacing: 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +51,10 @@ img {
   font-size: 2em;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .countdown-1 {
   display: flex;
   flex-wrap: wrap;
@@ -58,18 +63,23 @@ img {
   height: 600px;
 }
 
-.countdown-1a,
-.countdown-1b,
-.countdown-1c,
-.countdown-1d {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-}
-
 .bridegroom-1 {
   display: flex;
   flex-wrap: wrap;
   gap: 3em;
   justify-content: center;
+}
+
+.bridegroom-1a,
+.bridegroom-1b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bingkaiBrideGroom {
+  border: 5px solid rgb(126, 107, 2);
+  border-radius: 50%;
+  padding: 5px;
+  width: 100px;
 }

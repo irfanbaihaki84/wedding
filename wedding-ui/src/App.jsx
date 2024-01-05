@@ -7,12 +7,31 @@ import bride from './assets/bride.png';
 import groom from './assets/groom.png';
 
 function App() {
+  const hariJadi = new Date('jan 14, 2024 23:50:00').getTime();
+  const hariSekarang = new Date().getTime();
+  const selisih = hariJadi - hariSekarang;
+
+  const hari = Math.floor(selisih / (1000 * 60 * 60 * 24));
+  const jam = Math.floor(selisih / (1000 * 60 * 60));
+  const menit = Math.floor(selisih / (1000 * 60));
+  let detik = Math.floor(selisih / 1000);
+
+  console.log('hariJadi: ' + hariJadi);
+  console.log('hariSekarang: ' + hariSekarang);
+  console.log('selisih: ' + selisih);
+  console.log('hari: ' + hari);
+  console.log('jam: ' + jam);
+  console.log('menit: ' + menit);
+  console.log('detik: ' + detik);
   return (
     <div className="container">
       <section className="home">
-        <h2>SENIN, 20 NOVEMBER 2024</h2>
-        <h2>WE INVITE YOU</h2>
-        <h2>TO OUR WEDDING</h2>
+        <h2>MINGGU, 14 JANUARI 2024</h2>
+        <h2>
+          WE INVITE YOU
+          <br />
+          TO OUR WEDDING PARTY
+        </h2>
         <h1 className="title-1">Romeo and Juliet</h1>
         <h2>Hello, We Are Getting Married</h2>
         <div className="home-1">
@@ -27,14 +46,17 @@ function App() {
         <h1 className="title-2">
           COUNTDOWN <span className="material-symbols-outlined">timer</span>
         </h1>
-        <h2>Days : Hours : Minutes : Seconds</h2>
+        <h2>
+          {hari} Hari | {jam} Jam | {menit} Menit | {detik} Detik
+        </h2>
 
         <h1 className="title-2">
           NOTES <span className="material-symbols-outlined">description</span>
         </h1>
         <h2>Protokol Covid-19</h2>
-        <h3>Dalam upaya mengurangi penyebaran Covid-19 pada masa pandemi,</h3>
         <h3>
+          Dalam upaya mengurangi penyebaran Covid-19 pada masa pandemi,
+          <br />
           kami harapkan kedatangan para tamu undangan agar menjalankan protocol
           yang berlaku di tempat.
         </h3>
@@ -76,38 +98,51 @@ function App() {
           BRIDE & GROOM{' '}
           <span className="material-symbols-outlined">favorite</span>
         </h1>
-        <h3>Assalamu'alaikum Warahmatullahi Wabarakatuh</h3>
-        <h3>
+        <h3 className="italic">
+          Assalamu'alaikum Warahmatullahi Wabarakatuh
+          <br />
           Maha suci Allah SWT yang telah menciptakan mahluk-Nya
-          berpasang-pasngan.
-        </h3>
-        <h3>
+          berpasang-pasangan.
+          <br />
           Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan
           di antara Putra-Putri kami :
         </h3>
+
         <div className="bridegroom-1">
           <div className="bridegroom-1a">
-            <img src={groom} alt="groom" />
+            <div className="bingkaiBrideGroom">
+              <img src={groom} alt="groom" />
+            </div>
             <h2 className="title-2">ROMEO</h2>
-            <h2>Romeo Adam</h2>
-            <h2>Putra dari pasangan</h2>
-            <h2>Andy & Asih</h2>
             <h2>
+              Romeo Adam
+              <br />
+              Putra dari pasangan
+              <br />
+              Andy & Asih
+              <br />
               Jakarta{' '}
               <span className="material-symbols-outlined">location_on</span>
             </h2>
+            <h2>Instagram | Twitter</h2>
           </div>
 
           <div className="bridegroom-1b">
-            <img src={bride} alt="bride" />
+            <div className="bingkaiBrideGroom">
+              <img src={bride} alt="bride" />
+            </div>
             <h2 className="title-2">JULIET</h2>
-            <h2>Juliet Hawa</h2>
-            <h2>Putri dari pasangan</h2>
-            <h2>Fikri & Yuni</h2>
             <h2>
+              Juliet Hawa
+              <br />
+              Putri dari pasangan
+              <br />
+              Fikri & Yuni
+              <br />
               Tangerang{' '}
               <span className="material-symbols-outlined">location_on</span>
             </h2>
+            <h2>Instagram | Twitter</h2>
           </div>
         </div>
       </section>
@@ -121,7 +156,8 @@ function App() {
         <h1 className="title-2">OUR QUOTE</h1>
         <h3>
           Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai
-          di banding pernikahan. HR. IBNU MAJAH
+          di banding pernikahan.
+          <br /> HR. IBNU MAJAH
         </h3>
       </section>
 

@@ -31,6 +31,10 @@ img {
   margin-top: 7em;
   text-align: center;
   line-height: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-1,
@@ -46,7 +50,26 @@ img {
   font-size: 2em;
 }
 
-.one > .one-1,
-.two > .two-1 {
-  margin-top: 5em;
+.countdown-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 600px;
+}
+
+.countdown-1a,
+.countdown-1b,
+.countdown-1c,
+.countdown-1d {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.bridegroom-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
 }

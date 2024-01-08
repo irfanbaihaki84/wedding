@@ -5,6 +5,10 @@ import handWash from './assets/hand-wash.png';
 import namastee from './assets/namastee-hand.png';
 import bride from './assets/bride.png';
 import groom from './assets/groom.png';
+import instagram from './assets/instagram.png';
+import twitter from './assets/twitter.png';
+import facebook from './assets/facebook.png';
+import tiktok from './assets/tiktok.png';
 
 function App() {
   const hariJadi = new Date('jan 13, 2024 23:50:00').getTime();
@@ -66,31 +70,31 @@ function App() {
 
         <div className="note-1">
           <div className="note-1a">
-            <img src={maskMedic} alt="mask-man" />
+            <img className="small" src={maskMedic} alt="mask-man" />
             <h3>
-              Menggunakan Masker{' '}
-              <span className="material-symbols-outlined">medical_mask</span>
+              Menggunakan masker{' '}
+              {/* <span className="material-symbols-outlined">medical_mask</span> */}
             </h3>
           </div>
           <div className="note-1b">
-            <img src={keepDistance} alt="keep-distance" />
+            <img className="small" src={keepDistance} alt="keep-distance" />
             <h3>
-              Menjaga Jarak{' '}
-              <span className="material-symbols-outlined">social_distance</span>
+              Menjaga jarak{' '}
+              {/* <span className="material-symbols-outlined">social_distance</span> */}
             </h3>
           </div>
           <div className="note-1c">
-            <img src={namastee} alt="namastee-hand" />
+            <img className="small" src={namastee} alt="namastee-hand" />
             <h3>
               Mengunakan salam namastee sebagai pangganti jabat tangan{' '}
-              <span className="material-symbols-outlined">cheer</span>
+              {/* <span className="material-symbols-outlined">cheer</span> */}
             </h3>
           </div>
           <div className="note-1d">
-            <img src={handWash} alt="hand-wash" />
+            <img className="small" src={handWash} alt="hand-wash" />
             <h3>
               Menjaga kebersihan dengan mencuci tangan atau handsanitizer{' '}
-              <span className="material-symbols-outlined">clean_hands</span>
+              {/* <span className="material-symbols-outlined">clean_hands</span> */}
             </h3>
           </div>
         </div>
@@ -127,7 +131,10 @@ function App() {
               Jakarta{' '}
               <span className="material-symbols-outlined">location_on</span>
               <br />
-              Instagram | Twitter | Facebook
+              <img className="thumbnail" src={instagram} alt="instagram" />{' '}
+              <img className="thumbnail" src={twitter} alt="twitter" />{' '}
+              <img className="thumbnail" src={facebook} alt="facebook" />{' '}
+              <img className="thumbnail" src={tiktok} alt="tiktok" />
             </h2>
           </div>
 
@@ -146,7 +153,10 @@ function App() {
               Tangerang{' '}
               <span className="material-symbols-outlined">location_on</span>
               <br />
-              Instagram | Twitter | Facebook
+              <img className="thumbnail" src={instagram} alt="instagram" />{' '}
+              <img className="thumbnail" src={twitter} alt="twitter" />{' '}
+              <img className="thumbnail" src={facebook} alt="facebook" />{' '}
+              <img className="thumbnail" src={tiktok} alt="tiktok" />
             </h2>
           </div>
         </div>
@@ -160,7 +170,7 @@ function App() {
 
         <div className="bridegroom-2">
           <div className="bridegroom-2a">
-            <h2>AKAD NIKAH</h2>
+            <h2 className="title-3">AKAD NIKAH</h2>
             <h3>
               Jumat, 12 Januari 2024
               <br />
@@ -179,7 +189,7 @@ function App() {
             <button className="btn btn-success">Google Map</button>
           </div>
           <div className="bridegroom-2b">
-            <h2>RESEPSI</h2>
+            <h2 className="title-3">RESEPSI</h2>
             <h3>
               Sabtu, 13 Januari 2024
               <br />
@@ -198,7 +208,7 @@ function App() {
             <button className="btn btn-success">Google Map</button>
           </div>
           <div className="bridegroom-2c">
-            <h2>UNDUH MANTU</h2>
+            <h2 className="title-3">UNDUH MANTU</h2>
             <h3>
               Jumat, 14 Januari 2024
               <br />
@@ -233,6 +243,23 @@ function App() {
             featured_seasonal_and_gifts
           </span>
         </h1>
+
+        <div className="gift-1">
+          <div className="gift-1a">
+            <h2 className="title-3">BCA</h2>
+            <h3>
+              Romeo Adam :<br />
+              98981234
+            </h3>
+          </div>
+          <div className="gift-1a">
+            <h2 className="title-3">BSI</h2>
+            <h3>
+              Juliet Hawa :<br />
+              98984321
+            </h3>
+          </div>
+        </div>
       </section>
     </div>
   );

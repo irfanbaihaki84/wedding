@@ -29,7 +29,26 @@ function App() {
   console.log('detik: ' + detik);
   return (
     <div className="container">
-      <section className="home">
+      <section className="nav-bar">
+        <div className="nav-group">
+          <a href="#home" className="nav-item">
+            Home
+          </a>
+          <a href="#note" className="nav-item">
+            Notes
+          </a>
+          <a href="#bridegroom" className="nav-item">
+            Bride&Groom
+          </a>
+          <a href="#gallery" className="nav-item">
+            Gallery
+          </a>
+          <a href="#gift" className="nav-item">
+            Gift
+          </a>
+        </div>
+      </section>
+      <section className="home" id="home">
         <h2>
           Hello, We Are Getting Married
           <br />
@@ -44,11 +63,13 @@ function App() {
           <h2>Dear</h2>
           <h2 className="title-2">Anya</h2>
           <h2>Tangerang</h2>
-          <button className="btn btn-success">Open Invitation</button>
+          <button className="btn btn-success" onClick="#notes">
+            Open Invitation
+          </button>
         </div>
       </section>
 
-      <section className="note">
+      <section className="note" id="note">
         <h1 className="title-2">
           COUNTDOWN <span className="material-symbols-outlined">timer</span>
         </h1>
@@ -76,6 +97,7 @@ function App() {
               {/* <span className="material-symbols-outlined">medical_mask</span> */}
             </h3>
           </div>
+
           <div className="note-1b">
             <img className="small" src={keepDistance} alt="keep-distance" />
             <h3>
@@ -83,6 +105,7 @@ function App() {
               {/* <span className="material-symbols-outlined">social_distance</span> */}
             </h3>
           </div>
+
           <div className="note-1c">
             <img className="small" src={namastee} alt="namastee-hand" />
             <h3>
@@ -90,6 +113,7 @@ function App() {
               {/* <span className="material-symbols-outlined">cheer</span> */}
             </h3>
           </div>
+
           <div className="note-1d">
             <img className="small" src={handWash} alt="hand-wash" />
             <h3>
@@ -100,7 +124,7 @@ function App() {
         </div>
       </section>
 
-      <section className="bridegroom">
+      <section className="bridegroom" id="bridegroom">
         <h1 className="title-2">
           BRIDE & GROOM{' '}
           <span className="material-symbols-outlined">favorite</span>
@@ -131,10 +155,18 @@ function App() {
               Jakarta{' '}
               <span className="material-symbols-outlined">location_on</span>
               <br />
-              <img className="thumbnail" src={instagram} alt="instagram" />{' '}
-              <img className="thumbnail" src={twitter} alt="twitter" />{' '}
-              <img className="thumbnail" src={facebook} alt="facebook" />{' '}
-              <img className="thumbnail" src={tiktok} alt="tiktok" />
+              <a href="https://www.instagram.com" target="_blank">
+                <img className="thumbnail" src={instagram} alt="instagram" />{' '}
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <img className="thumbnail" src={twitter} alt="twitter" />{' '}
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img className="thumbnail" src={facebook} alt="facebook" />{' '}
+              </a>
+              <a href="https://www.tiktok.com" target="_blank">
+                <img className="thumbnail" src={tiktok} alt="tiktok" />
+              </a>
             </h2>
           </div>
 
@@ -153,10 +185,18 @@ function App() {
               Tangerang{' '}
               <span className="material-symbols-outlined">location_on</span>
               <br />
-              <img className="thumbnail" src={instagram} alt="instagram" />{' '}
-              <img className="thumbnail" src={twitter} alt="twitter" />{' '}
-              <img className="thumbnail" src={facebook} alt="facebook" />{' '}
-              <img className="thumbnail" src={tiktok} alt="tiktok" />
+              <a href="https://www.instagram.com" target="_blank">
+                <img className="thumbnail" src={instagram} alt="instagram" />{' '}
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <img className="thumbnail" src={twitter} alt="twitter" />{' '}
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img className="thumbnail" src={facebook} alt="facebook" />{' '}
+              </a>
+              <a href="https://www.tiktok.com" target="_blank">
+                <img className="thumbnail" src={tiktok} alt="tiktok" />
+              </a>
             </h2>
           </div>
         </div>
@@ -165,7 +205,7 @@ function App() {
         <h3>
           Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai
           di banding pernikahan.
-          <br /> HR. IBNU MAJAH
+          <br /> HR. Ibnu Majah
         </h3>
 
         <div className="bridegroom-2">
@@ -229,14 +269,14 @@ function App() {
         </div>
       </section>
 
-      <section className="gallery">
+      <section className="gallery" id="gallery">
         <h1 className="title-2">
           GALLERY{' '}
           <span className="material-symbols-outlined">photo_camera</span>
         </h1>
       </section>
 
-      <section className="gift">
+      <section className="gift" id="gift">
         <h1 className="title-2">
           GIFT{' '}
           <span className="material-symbols-outlined">

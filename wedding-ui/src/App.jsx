@@ -7,7 +7,7 @@ import bride from './assets/bride.png';
 import groom from './assets/groom.png';
 
 function App() {
-  const hariJadi = new Date('jan 14, 2024 23:50:00').getTime();
+  const hariJadi = new Date('jan 13, 2024 23:50:00').getTime();
   const hariSekarang = new Date().getTime();
   const selisih = hariJadi - hariSekarang;
 
@@ -26,23 +26,25 @@ function App() {
   return (
     <div className="container">
       <section className="home">
-        <h2>MINGGU, 14 JANUARI 2024</h2>
         <h2>
-          WE INVITE YOU
+          Hello, We Are Getting Married
           <br />
-          TO OUR WEDDING PARTY
+          Minggu, 13 Januari 2024
+          <br />
+          We Invite You
+          <br />
+          To Our Wedding Party
         </h2>
-        <h1 className="title-1">Romeo and Juliet</h1>
-        <h2>Hello, We Are Getting Married</h2>
+        <h1 className="title-1">Romeo & Juliet</h1>
         <div className="home-1">
           <h2>Dear</h2>
           <h2 className="title-2">Anya</h2>
           <h2>Tangerang</h2>
-          <button>Open Invitation</button>
+          <button className="btn btn-success">Open Invitation</button>
         </div>
       </section>
 
-      <section className="countdown">
+      <section className="note">
         <h1 className="title-2">
           COUNTDOWN <span className="material-symbols-outlined">timer</span>
         </h1>
@@ -53,42 +55,43 @@ function App() {
         <h1 className="title-2">
           NOTES <span className="material-symbols-outlined">description</span>
         </h1>
-        <h2>Protokol Covid-19</h2>
         <h3>
+          Protokol Covid-19
+          <br />
           Dalam upaya mengurangi penyebaran Covid-19 pada masa pandemi,
           <br />
           kami harapkan kedatangan para tamu undangan agar menjalankan protocol
           yang berlaku di tempat.
         </h3>
 
-        <div className="countdown-1">
-          <div className="conutdown-1a">
+        <div className="note-1">
+          <div className="note-1a">
             <img src={maskMedic} alt="mask-man" />
-            <p>
+            <h3>
               Menggunakan Masker{' '}
               <span className="material-symbols-outlined">medical_mask</span>
-            </p>
+            </h3>
           </div>
-          <div className="conutdown-1b">
+          <div className="note-1b">
             <img src={keepDistance} alt="keep-distance" />
-            <p>
+            <h3>
               Menjaga Jarak{' '}
               <span className="material-symbols-outlined">social_distance</span>
-            </p>
+            </h3>
           </div>
-          <div className="conutdown-1c">
+          <div className="note-1c">
             <img src={namastee} alt="namastee-hand" />
-            <p>
+            <h3>
               Mengunakan salam namastee sebagai pangganti jabat tangan{' '}
               <span className="material-symbols-outlined">cheer</span>
-            </p>
+            </h3>
           </div>
-          <div className="conutdown-1d">
+          <div className="note-1d">
             <img src={handWash} alt="hand-wash" />
-            <p>
+            <h3>
               Menjaga kebersihan dengan mencuci tangan atau handsanitizer{' '}
               <span className="material-symbols-outlined">clean_hands</span>
-            </p>
+            </h3>
           </div>
         </div>
       </section>
@@ -123,8 +126,9 @@ function App() {
               <br />
               Jakarta{' '}
               <span className="material-symbols-outlined">location_on</span>
+              <br />
+              Instagram | Twitter | Facebook
             </h2>
-            <h2>Instagram | Twitter</h2>
           </div>
 
           <div className="bridegroom-1b">
@@ -141,8 +145,76 @@ function App() {
               <br />
               Tangerang{' '}
               <span className="material-symbols-outlined">location_on</span>
+              <br />
+              Instagram | Twitter | Facebook
             </h2>
-            <h2>Instagram | Twitter</h2>
+          </div>
+        </div>
+
+        <h1 className="title-2">OUR QUOTE</h1>
+        <h3>
+          Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai
+          di banding pernikahan.
+          <br /> HR. IBNU MAJAH
+        </h3>
+
+        <div className="bridegroom-2">
+          <div className="bridegroom-2a">
+            <h2>AKAD NIKAH</h2>
+            <h3>
+              Jumat, 12 Januari 2024
+              <br />
+              08:00 - 09:00 WIB
+              <br />
+              Masjid Istiqomah
+              <br />
+              Jl. Veteran No. 21
+              <br />
+              Cisereh, Kadu Jaya, Kec. Curug
+              <br />
+              Kabupaten Tangerang
+              <br />
+              Banten
+            </h3>
+            <button className="btn btn-success">Google Map</button>
+          </div>
+          <div className="bridegroom-2b">
+            <h2>RESEPSI</h2>
+            <h3>
+              Sabtu, 13 Januari 2024
+              <br />
+              08:00 - Selesai WIB
+              <br />
+              Rumah Bapak Andy
+              <br />
+              Jl. Veteran No. 22
+              <br />
+              Cisereh, Kadu Jaya, Kec. Curug
+              <br />
+              Kabupaten Tangerang
+              <br />
+              Banten
+            </h3>
+            <button className="btn btn-success">Google Map</button>
+          </div>
+          <div className="bridegroom-2c">
+            <h2>UNDUH MANTU</h2>
+            <h3>
+              Jumat, 14 Januari 2024
+              <br />
+              08:00 - Selesai WIB
+              <br />
+              Rumah Bapak Fikri
+              <br />
+              Jalan Raya Serang
+              <br />
+              Bitung, Kadu Jaya, Kec. Curug
+              <br />
+              Kabupaten Tangerang
+              <br />
+              Banten
+            </h3>
+            <button className="btn btn-success">Google Map</button>
           </div>
         </div>
       </section>
@@ -152,13 +224,6 @@ function App() {
           GALLERY{' '}
           <span className="material-symbols-outlined">photo_camera</span>
         </h1>
-
-        <h1 className="title-2">OUR QUOTE</h1>
-        <h3>
-          Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai
-          di banding pernikahan.
-          <br /> HR. IBNU MAJAH
-        </h3>
       </section>
 
       <section className="gift">

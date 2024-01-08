@@ -12,6 +12,8 @@
   /* text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+  --satu: rgba(9, 44, 7, 0.87);
+  --dua: rgb(155, 132, 2);
 }
 
 body {
@@ -19,28 +21,36 @@ body {
   padding: 0;
 }
 
+.btn {
+  border: 4px solid black;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-success {
+  color: var(--satu);
+  font-size: 1em;
+  font-weight: 900;
+  border-color: var(--dua);
+}
+
 img {
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .home,
-.countdown,
+.note,
 .bridegroom,
 .gallery,
 .gift {
-  margin-top: 7em;
   text-align: center;
-  line-height: 1;
   letter-spacing: 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .title-1,
 .title-2 {
-  color: rgb(126, 107, 2);
+  color: var(--dua);
 }
 
 .title-1 {
@@ -55,18 +65,17 @@ img {
   font-style: italic;
 }
 
-.countdown-1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 50%;
-  height: 600px;
+.bingkaiBrideGroom {
+  border: 5px solid var(--dua);
+  border-radius: 50%;
+  padding: 5px;
+  width: 250px;
 }
 
-.bridegroom-1 {
+.bridegroom-1,
+.bridegroom-2 {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3em;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -74,12 +83,14 @@ img {
 .bridegroom-1b {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.bingkaiBrideGroom {
-  border: 5px solid rgb(126, 107, 2);
-  border-radius: 50%;
-  padding: 5px;
-  width: 100px;
+.bridegroom-2a,
+.bridegroom-2b,
+.bridegroom-2c {
+  border: 4px solid var(--dua);
+  border-radius: 8px;
+  padding: 10px;
 }

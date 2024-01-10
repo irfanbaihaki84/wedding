@@ -51,6 +51,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--satu);
+  font-weight: bold;
 }
 
 .btn {

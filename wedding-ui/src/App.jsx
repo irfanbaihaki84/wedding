@@ -1,4 +1,9 @@
 import './index.css';
+import home from './assets/home.png';
+import description from './assets/description.png';
+import favorite from './assets/favorite.png';
+import photo_camera from './assets/photo_camera.png';
+import gifts from './assets/gifts.png';
 import maskMedic from './assets/mask-man.png';
 import keepDistance from './assets/keep-distance.png';
 import handWash from './assets/hand-wash.png';
@@ -32,22 +37,28 @@ function App() {
       <section className="nav-bar">
         <div className="nav-group">
           <a href="#home" className="nav-item">
-            Home
+            <span className="material-symbols-outlined">home</span>Home
           </a>
           <a href="#note" className="nav-item">
-            Notes
+            <span className="material-symbols-outlined">description</span>Notes
           </a>
           <a href="#bridegroom" className="nav-item">
-            Bride&Groom
+            <span className="material-symbols-outlined">favorite</span>
+            Profile
           </a>
           <a href="#gallery" className="nav-item">
+            <span className="material-symbols-outlined">photo_camera</span>
             Gallery
           </a>
           <a href="#gift" className="nav-item">
+            <span className="material-symbols-outlined">
+              featured_seasonal_and_gifts
+            </span>
             Gift
           </a>
         </div>
       </section>
+
       <section className="home" id="home">
         <h2>
           Hello, We Are Getting Married

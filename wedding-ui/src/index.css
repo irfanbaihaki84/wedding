@@ -16,25 +16,41 @@
   --dua: rgb(155, 132, 2);
 }
 
-body {
-  margin: 0;
-  padding: 0;
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 a {
   text-decoration: none;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: center;
-}
-
 .nav-group {
-  width: 50%;
-  border: 1px solid var(--dua);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border: 3px solid var(--dua);
   border-radius: 10px;
   padding: 10px;
+  margin: 10px auto;
+  position: fixed;
+  bottom: 0;
+  gap: 10px;
+  left: 35%;
+  right: 35%;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn {

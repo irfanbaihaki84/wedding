@@ -1,9 +1,4 @@
 import './index.css';
-import home from './assets/home.png';
-import description from './assets/description.png';
-import favorite from './assets/favorite.png';
-import photo_camera from './assets/photo_camera.png';
-import gifts from './assets/gifts.png';
 import maskMedic from './assets/mask-man.png';
 import keepDistance from './assets/keep-distance.png';
 import handWash from './assets/hand-wash.png';
@@ -45,6 +40,10 @@ function App() {
           <a href="#bridegroom" className="nav-item">
             <span className="material-symbols-outlined">favorite</span>
             Profile
+          </a>
+          <a href="#acara" className="nav-item">
+            <span className="material-symbols-outlined">star</span>
+            Acara
           </a>
           <a href="#gallery" className="nav-item">
             <span className="material-symbols-outlined">photo_camera</span>
@@ -219,6 +218,9 @@ function App() {
           <br /> HR. Ibnu Majah
         </h3>
 
+        <h1 className="title-2" id="acara">
+          ACARA <span className="material-symbols-outlined">star</span>
+        </h1>
         <div className="bridegroom-2">
           <div className="bridegroom-2a">
             <h2 className="title-3">AKAD NIKAH</h2>

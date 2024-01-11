@@ -287,6 +287,44 @@ function App() {
           GALLERY{' '}
           <span className="material-symbols-outlined">photo_camera</span>
         </h1>
+        <div className="gallery-1">
+          <div className="card">
+            <img src={groom} alt="groom" />
+          </div>
+          <div className="card">
+            <img src={bride} alt="bride" />
+          </div>
+          <div className="card">
+            <img src={groom} alt="groom" />
+          </div>
+          <div className="card">
+            <img src={bride} alt="bride" />
+          </div>
+          <div className="card">
+            <img src={groom} alt="groom" />
+          </div>
+          <div className="card">
+            <img src={bride} alt="bride" />
+          </div>
+          <div className="card">
+            <img src={groom} alt="groom" />
+          </div>
+          <div className="card">
+            <img src={bride} alt="bride" />
+          </div>
+          <div className="card">
+            <img src={groom} alt="groom" />
+          </div>
+          <div className="card">
+            <img src={bride} alt="bride" />
+          </div>
+          <div className="card">
+            <img src={groom} alt="groom" />
+          </div>
+          <div className="card">
+            <img src={bride} alt="bride" />
+          </div>
+        </div>
       </section>
 
       <section className="gift" id="gift">

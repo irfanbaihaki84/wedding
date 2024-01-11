@@ -42,9 +42,8 @@ a {
   margin: 10px auto;
   position: fixed;
   bottom: 0;
-  gap: 10px;
-  left: 35%;
-  right: 35%;
+  left: 30%;
+  right: 30%;
 }
 
 .nav-item {
@@ -161,6 +160,12 @@ img {
   padding: 10px;
 }
 
+.gallery-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .gift-1a,
 .gift-1b {
   display: flex;
@@ -168,4 +173,18 @@ img {
   border-radius: 8px;
   gap: 10px;
   padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .nav-group {
+    left: 10%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-group {
+    left: 0;
+    right: 0;
+  }
 }

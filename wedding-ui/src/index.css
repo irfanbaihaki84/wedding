@@ -17,22 +17,23 @@
 }
 
 * {
-  /* margin: 0; */
-  /* padding: 0; */
   box-sizing: border-box;
 }
 
-.container {
-  margin-top: 60px;
+section {
+  margin-top: 20px;
   margin-bottom: 100px;
 }
 
 a {
   text-decoration: none;
 }
+
 .audio {
   position: fixed;
+  margin: 0;
   top: 0;
+  left: -5px;
 }
 
 .nav-group {
@@ -119,13 +120,18 @@ img {
 
 .countdown {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
 .countdown-card {
+  background-color: var(--dua);
   width: 100px;
   height: 100px;
-  background-color: var(--dua);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 50%;
   padding: 10px;
 }

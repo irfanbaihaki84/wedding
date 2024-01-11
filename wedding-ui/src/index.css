@@ -23,12 +23,16 @@
 }
 
 .container {
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
 a {
   text-decoration: none;
+}
+.audio {
+  position: fixed;
+  top: 0;
 }
 
 .nav-group {
@@ -111,6 +115,19 @@ img {
 
 .italic {
   font-style: italic;
+}
+
+.countdown {
+  display: flex;
+  gap: 10px;
+}
+
+.countdown-card {
+  width: 100px;
+  height: 100px;
+  background-color: var(--dua);
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .note {

@@ -9,6 +9,7 @@ import instagram from './assets/instagram.png';
 import twitter from './assets/twitter.png';
 import facebook from './assets/facebook.png';
 import tiktok from './assets/tiktok.png';
+import music0 from './assets/musics/music0.mp3';
 
 function App() {
   const hariJadi = new Date('jan 13, 2024 23:50:00').getTime();
@@ -29,6 +30,14 @@ function App() {
   console.log('detik: ' + detik);
   return (
     <div className="container">
+      <section className="audio">
+        <div className="audio-group">
+          <audio controls autoPlay loop>
+            <source src={music0} type="audio/mpeg" />
+          </audio>
+        </div>
+      </section>
+
       <section className="nav-bar">
         <div className="nav-group">
           <a href="#home" className="nav-item">
@@ -83,9 +92,36 @@ function App() {
         <h1 className="title-2">
           COUNTDOWN <span className="material-symbols-outlined">timer</span>
         </h1>
-        <h2>
-          {hari} Hari | {jam} Jam | {menit} Menit | {detik} Detik
-        </h2>
+        <div className="countdown">
+          <div className="countdown-card">
+            <h2>
+              {hari}
+              <br />
+              Hari
+            </h2>
+          </div>
+          <div className="countdown-card">
+            <h2>
+              {jam}
+              <br />
+              Jam
+            </h2>
+          </div>
+          <div className="countdown-card">
+            <h2>
+              {menit}
+              <br />
+              Menit
+            </h2>
+          </div>
+          <div className="countdown-card">
+            <h2>
+              {detik}
+              <br />
+              Detik
+            </h2>
+          </div>
+        </div>
 
         <h1 className="title-2">
           NOTES <span className="material-symbols-outlined">description</span>

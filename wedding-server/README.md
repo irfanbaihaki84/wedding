@@ -8,11 +8,11 @@ instal npm: npm install init -y
 
 instal nodemon di depDependencies: npm i nodemon --save-dev
 
-instal express di dependencies: npm i express --save-dev
+instal express di dependencies: npm i express --save
 
-instal mongoose di dependencies: npm i mongoose --save-dev
+instal mongoose di dependencies: npm i mongoose --save
 
-instal dotenv di dependencies: npm i dotenv --save-dev
+instal dotenv di dependencies: npm i dotenv --save
 
 ### packages.json
 

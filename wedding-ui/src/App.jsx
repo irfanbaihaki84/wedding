@@ -12,7 +12,7 @@ import tiktok from './assets/tiktok.png';
 import music0 from './assets/musics/music0.mp3';
 
 function App() {
-  const hariJadi = new Date('jan 13, 2024 23:50:00').getTime();
+  const hariJadi = new Date('jan 28, 2024 23:50:00').getTime();
   const hariSekarang = new Date().getTime();
   const selisih = hariJadi - hariSekarang;
 
@@ -114,13 +114,13 @@ function App() {
               Menit
             </h2>
           </div>
-          <div className="countdown-card">
+          {/* <div className="countdown-card">
             <h2>
               {detik}
               <br />
               Detik
             </h2>
-          </div>
+          </div> */}
         </div>
 
         <h1 className="title-2">

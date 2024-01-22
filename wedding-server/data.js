@@ -1,0 +1,62 @@
+const data = {
+  wedding: [
+    {
+      programName: 'Wedding',
+      groom: 'Romeo Adam',
+      bride: 'Juliet Hawa',
+      fatherGroom: 'Andy Adam',
+      motherGroom: 'Asih Adam',
+      fatherBride: 'Fikri Hawa',
+      motherBride: 'Yuli Hawa',
+      guests: [
+        {
+          name: 'Anya',
+          from: 'Tangerang',
+          phone: '081987654320',
+          occupation: 'Family Adam',
+          status: 'Vip',
+          message: 'Selamat menikah',
+        },
+        {
+          name: 'Reza',
+          from: 'Jakarta',
+          phone: '081987654321',
+          occupation: 'Family Hawa',
+          status: 'Vip',
+          message: 'Selamat menikah',
+        },
+        {
+          name: 'Jacob',
+          from: 'Bekasi',
+          phone: '081987654322',
+          occupation: 'Atasan Kerja',
+          status: 'Vip',
+          message: 'Selamat menikah',
+        },
+        {
+          name: 'Ratih',
+          from: 'Bogor',
+          phone: '081987654323',
+          occupation: 'Teman',
+          status: '',
+          message: 'Selamat menikah',
+        },
+        {
+          name: 'Rian',
+          from: 'Jakarta',
+          phone: '081987654324',
+          occupation: 'Tetangga',
+          status: '',
+          message: 'Selamat menikah',
+        },
+      ],
+      imageGroom: 'imageGroom.jpg',
+      urlImageGroom: 'http://localhost:3002/assets/groomImage.jpg',
+      imageBride: 'imageBride.jpg',
+      urlImageBride: 'http://localhost:3002/assets/brideImage.jpg',
+      video: 'videoWdding.mp4',
+      urlVideo: 'http://localhost:3002/assets/videoWedding.mp4',
+    },
+  ],
+};
+export default data;

@@ -79,3 +79,74 @@ buat file .env: touch .env
 PORT=3002
 MONGODB_URI=mongodb://127.0.0.1:27017/rent
 ```
+
+buat folder models dan file weddingModel.js: mkdir models dan touch weddingModel.js
+
+### weddingModel.js
+
+```javascript
+import Mongoose from 'mongoose';
+
+const weddingSchema = new Mongoose.Schema(
+  {
+    programName: { type: String, required: true },
+    groom: { type: String },
+    bride: { type: String },
+    fatherGroom: { type: String },
+    motherGroom: { type: String },
+    fatherBride: { type: String },
+    motherBride: { type: String },
+    guests: {
+      name: String,
+      from: String,
+      phone: Number,
+      occupation: String,
+      status: String,
+      message: String,
+    },
+    imageGroom: { type: String },
+    urlImageGroom: { type: String },
+    imageBride: { type: String },
+    urlImageBride: { type: String },
+    video: { type: String },
+    urlVideo: { type: String },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+const Wedding = Mongoose.model('Wedding', weddingSchema);
+export default Wedding;
+```
+
+buat folder routes dan file weddingRoutes.js: mkdir routes dan touch weddingRoutes.js
+
+### weddingRoutes.js
+
+```javascript
+import Express from 'express';
+import Wedding from '../models/weddingModel.js';
+
+const weddingRouter = Express.Router();
+
+// membuat collection video di database rent
+weddingRouter.get('/seed', async (req, res) => {
+  // buka browser tulis http://localhost:3002/api/seed dan tekan enter untuk mengesekusi
+  // await Wedding.deleteOne({});
+  const createdWedding = await Wedding.insertMany(data.wedding);
+  res.send({ createdWedding });
+});
+
+// menampilkan seluruh data wedding
+weddingRouter.get('/', async (req, res) => {
+  try {
+    const weddings = await Wedding.find();
+    res.status(200).send(weddings);
+  } catch (error) {
+    res.status(500).send({ message: error });
+  }
+});
+
+export default weddingRouter;
+```

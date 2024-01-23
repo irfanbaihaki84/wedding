@@ -1,5 +1,6 @@
 import Express from 'express';
 import Wedding from '../models/weddingModel.js';
+import data from '../data.js';
 
 const weddingRouter = Express.Router();
 
@@ -12,7 +13,7 @@ weddingRouter.get('/seed', async (req, res) => {
 });
 
 // menampilkan seluruh data wedding
-weddingRouter.get('/', async (req, res) => {
+weddingRouter.get('/all', async (req, res) => {
   try {
     const weddings = await Wedding.find();
     res.status(200).send(weddings);
